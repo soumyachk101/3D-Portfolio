@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Portfolio - Modern Web Developer & Designer">
+    <title>Soumya Chakraborty | Web Developer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <i class="fas fa-laptop-code loading-icon"></i>
+            <h1 class="loading-text">MY PROFILE</h1>
+        </div>
+    </div>
+
+    <!-- Floating Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
+                    </a></li>
+                <li><a href="#about" class="nav-link">
+                        <i class="fas fa-user"></i>
+                        <span>About</span>
+                    </a></li>
+                <li><a href="#projects" class="nav-link">
+                        <i class="fas fa-code"></i>
+                        <span>Projects</span>
+                    </a></li>
+                <li><a href="#services" class="nav-link">
+                        <i class="fas fa-briefcase"></i>
+                        <span>Services</span>
+                    </a></li>
+                <li><a href="#certificates" class="nav-link">
+                        <i class="fas fa-certificate"></i>
+                        <span>Certificates</span>
+                    </a></li>
+                <li><a href="#contact" class="nav-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>Contact</span>
+                    </a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <!-- Left Side: Text Content -->
+                <div class="hero-text">
+                    <div class="badge">
+                        <i class="fas fa-circle pulse"></i>
+                        Available for freelance work
+                    </div>
+                    <h1 class="hero-title">Hi, I'm <span class="highlight">Alex Chen</span></h1>
+                    <h2 class="hero-subtitle">
+                        I'm a <span id="typewriter" class="typewriter"></span>
+                        <span class="cursor">|</span>
+                    </h2>
+                    <p class="hero-description">
+                        Hey there! I'm a B.Tech CSE student who loves turning ideas into real, working websites.
+                        Currently exploring AI and full-stack development. When I'm not coding, I'm learning something
+                        new!
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Hire Me</a>
+                        <a href="cv/Soumya_Chakraborty_CV.pdf" class="btn btn-outline" download><i
+                                class="fas fa-download"></i> Download CV</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Side: Image -->
+                <div class="hero-image">
+                    <div class="image-wrapper floating">
+                        <img src="images/Profile Photo.jpg" alt="Soumya Chakraborty - Profile Photo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">A Bit About Me</h2>
+                <p class="section-description">
+                    I'm a curious developer who believes in learning by building. Started my coding journey
+                    with curiosity, and now I'm passionate about creating things that actually help people.
+                    Every project teaches me something new!
+                </p>
+            </div>
+
+            <div class="about-cards">
+                <!-- Education Card -->
+                <div class="info-card">
+                    <div class="card-header">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Education</h3>
+                    </div>
+                    <div class="education-info">
+                        <h4>B.Tech in Computer Science & Engineering</h4>
+                        <p>NSHM Knowledge Campus Durgapur | 2nd Year, 3rd Semester</p>
+                        <p class="education-desc">Currently pursuing B.Tech CSE with focus on Web Development</p>
+                    </div>
+                </div>
+
+                <!-- Experience Card -->
+                <div class="info-card">
+                    <div class="card-header">
+                        <i class="fas fa-briefcase"></i>
+                        <h3>Experience</h3>
+                    </div>
+                    <div class="experience-info">
+                        <h4>Fresher</h4>
+                        <p>Passionate about web development</p>
+                        <p class="experience-desc">Building projects to grow my skills</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-grid-new">
+                <!-- Code Proficiency Section -->
+                <div class="skills-column">
+                    <h3 class="skills-header"><span class="hash">#</span> Code_Proficiency</h3>
+
+                    <div class="proficiency-bars">
+                        <div class="skill-bar-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-percent">95%</span>
+                            </div>
+                            <div class="progress-bg">
+                                <div class="progress-fill cyan" style="width: 95%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar-item">
+                            <div class="skill-info">
+                                <span class="skill-name">C</span>
+                                <span class="skill-percent">76%</span>
+                            </div>
+                            <div class="progress-bg">
+                                <div class="progress-fill yellow" style="width: 76%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar-item">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript / TypeScript</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="progress-bg">
+                                <div class="progress-fill cyan" style="width: 90%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar-item">
+                            <div class="skill-info">
+                                <span class="skill-name">React / Next.js</span>
+                                <span class="skill-percent">88%</span>
+                            </div>
+                            <div class="progress-bg">
+                                <div class="progress-fill yellow" style="width: 88%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar-item">
+                            <div class="skill-info">
+                                <span class="skill-name">SQL / NoSQL</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="progress-bg">
+                                <div class="progress-fill cyan" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Human Languages Section -->
+                <div class="skills-column">
+                    <h3 class="skills-header"><span class="hash">#</span> Human_Languages</h3>
+
+                    <div class="language-cards-list">
+                        <div class="lang-card">
+                            <div class="lang-info">
+                                <span class="lang-name">Bengali</span>
+                                <span class="lang-level">Native / Mother Tongue</span>
+                            </div>
+                            <div class="lang-signal">
+                                <div class="signal-bar active"></div>
+                                <div class="signal-bar active"></div>
+                                <div class="signal-bar active"></div>
+                                <div class="signal-bar active"></div>
+                            </div>
+                        </div>
+
+                        <div class="lang-card">
+                            <div class="lang-info">
+                                <span class="lang-name">English</span>
+                                <span class="lang-level">Professional Working Proficiency</span>
+                            </div>
+                            <div class="lang-signal">
+                                <div class="signal-bar active"></div>
+                                <div class="signal-bar active"></div>
+                                <div class="signal-bar active"></div>
+                                <div class="signal-bar"></div>
+                            </div>
+                        </div>
+
+                        <div class="lang-card">
+                            <div class="lang-info">
+                                <span class="lang-name">Hindi</span>
+                                <span class="lang-level">Full Professional Proficiency</span>
+                            </div>
+                            <div class="signal-bars">
+                                <div class="lang-signal">
+                                    <div class="signal-bar active"></div>
+                                    <div class="signal-bar active"></div>
+                                    <div class="signal-bar active"></div>
+                                    <div class="signal-bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experience & Internships</h2>
+                <p class="section-description">My journey in tech - learning, building, and growing</p>
+            </div>
+
+            <div class="experience-timeline">
+                <!-- Experience Item 0 (New) -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>AWS Media & Entertainment Cloud Engineering</h3>
+                            <span class="timeline-company"><i class="fab fa-aws"></i> AWS</span>
+                        </div>
+                        <span class="timeline-date"><i class="fas fa-calendar-alt"></i> Internship</span>
+                        <p class="timeline-description">
+                            Focused on cloud engineering solutions for media and entertainment.
+                            Gained hands-on experience with AWS services to optimize media workflows and content
+                            delivery.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tag">AWS</span>
+                            <span class="tag">Cloud Engineering</span>
+                            <span class="tag">Media</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience Item 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Data Analytics Process Automation Virtual Internship</h3>
+                            <span class="timeline-company"><i class="fas fa-robot"></i> AICTE</span>
+                        </div>
+                        <span class="timeline-date"><i class="fas fa-calendar-alt"></i> Internship</span>
+                        <p class="timeline-description">
+                            Gained practical experience in process automation and data analytics.
+                            Worked on real-world scenarios to tackle automation challenges using industry-standard
+                            tools.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tag">Process Automation</span>
+                            <span class="tag">Data Analytics</span>
+                            <span class="tag">AICTE</span>
+                        </div>
+                        <a href="certificates/Data Analytics Process Automation Virtual Internship By AICTE.pdf"
+                            target="_blank" class="timeline-cert-link">
+                            <i class="fas fa-external-link-alt"></i> View Certificate
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Experience Item 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Data Analytics & Business Intelligence Lab</h3>
+                            <span class="timeline-company"><i class="fas fa-building"></i> IBM SkillsBuild</span>
+                        </div>
+                        <span class="timeline-date"><i class="fas fa-calendar-alt"></i> Internship</span>
+                        <p class="timeline-description">
+                            Explored, analyzed, and built real-world solutions.
+                            Focused on data visualization, hypothesis testing, and deriving business insights from
+                            complex datasets.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tag">Data Analytics</span>
+                            <span class="tag">Business Intelligence</span>
+                            <span class="tag">IBM</span>
+                        </div>
+                        <a href="certificates/Data Analytics & Business Intelligence Lab_ Explore, Analyze & Build Real-World Solutions By IBM Skill Build.pdf"
+                            target="_blank" class="timeline-cert-link">
+                            <i class="fas fa-external-link-alt"></i> View Certificate
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Experience Item 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Python Programming Internship</h3>
+                            <span class="timeline-company"><i class="fas fa-code"></i> CodeAlpha</span>
+                        </div>
+                        <span class="timeline-date"><i class="fas fa-calendar-alt"></i> Internship</span>
+                        <p class="timeline-description">
+                            Developed robust Python applications and scripts.
+                            Enhanced problem-solving skills through algorithmic challenges and software development
+                            tasks.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Development</span>
+                            <span class="tag">CodeAlpha</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Certificates & Achievements</h2>
+                <p class="section-description">Professional certifications from top tech companies and universities</p>
+            </div>
+
+            <!-- Category: AI & Machine Learning -->
+            <div class="cert-category">
+                <h3 class="category-title"><i class="fas fa-brain"></i> AI & Machine Learning</h3>
+                <div class="certificates-grid">
+                    <a href="certificates/Machine Learning with Python By IBM.pdf" target="_blank"
+                        class="certificate-card">
+                        <div class="cert-icon ibm"><i class="fas fa-brain"></i></div>
+                        <div class="cert-content">
+                            <h3>Machine Learning with Python</h3>
+                            <span class="cert-issuer">IBM</span>
+                        </div>
+                    </a>
+                    <a href="certificates/AI Infrastructure and Operations Fundamentals By NVIDIA.pdf" target="_blank"
+                        class="certificate-card">
+                        <div class="cert-icon nvidia"><i class="fas fa-microchip"></i></div>
+                        <div class="cert-content">
+                            <h3>AI Infrastructure & Operations</h3>
+                            <span class="cert-issuer">NVIDIA</span>
+                        </div>
+                    </a>
+                    <a href="certificates/NVIDIA LLM Experimentation Deployment and Ethical AI.pdf" target="_blank"
+                        class="certificate-card">
+                        <div class="cert-icon nvidia"><i class="fas fa-robot"></i></div>
+                        <div class="cert-content">
+                            <h3>LLM Deployment & Ethical AI</h3>
+                            <span class="cert-issuer">NVIDIA</span>
+                        </div>
+                    </a>
+                    <a href="certificates/AI Workflow Enterprise Model Deployment By IBM.pdf" target="_blank"
+                        class="certificate-card">
+                        <div class="cert-icon ibm"><i class="fas fa-network-wired"></i></div>
+                        <div class="cert-content">
+                            <h3>AI Workflow: Model Deployment</h3>
+                            <span class="cert-issuer">IBM</span>
+                        </div>
+                    </a>
+                    <a href="certificates/Introduction to Computer Vision by University of Colorado.pdf" target="_blank"
+                        class="certificate-card">
+                        <div class="cert-icon university"><i class="fas fa-camera"></i></div>
+                        <div class="cert-content">
+                            <h3>Intro to Computer Vision</h3>
+                            <span class="cert-issuer">CU Boulder</span>
+                        </div>
+                    </a>
+                    <a href="certificates/Deep Learning for Computer Vision By University Of Colorado Boulder.pdf"
+                        target="_blank" class="certificate-card">
+                        <div class="cert-icon university"><i class="fas fa-eye"></i></div>
+                        <div class="cert-content">
+                            <h3>Deep Learning for CV</h3>
+                            <span class="cert-issuer">CU Boulder</span>
+                        </div>
+                    </a>
+                    <a href="certificates/AI Workflow_ Data Analysis and Hypothesis Testing By IBM.pdf" target="_blank"
+                        class="certificate-card">
+                        <div class="cert-icon ibm"><i class="fas fa-chart-line"></i></div>
+                        <div class="cert-content">
+                            <h3>Data Analysis & Hypothesis</h3>
+                            <span class="cert-issuer">IBM</span>
+                        </div>
+                    </a>
+                    <a href="certificates/AI Workflow Business Priorities and Data by IBM.pdf" target="_blank"
+                        class="certificate-card">
+                        <div class="cert-icon ibm"><i class="fas fa-briefcase"></i></div>
+                        <div class="cert-content">
+                            <h3>Business Priorities & Data</h3>
+                            <span class="cert-issuer">IBM</span>
+                        </div>
+                    </a>
+                    <a href="certificates/AI Workflow_ Machine Learning, Visual Recognition and NLP By IBM.pdf"
+                        target="_blank" class="certificate-card">
+                        <div class="cert-icon ibm"><i class="fas fa-language"></i></div>
+                        <div class="cert-content">
+                            <h3>ML, Visual Recognition & NLP</h3>
+                            <span class="cert-issuer">IBM</span>
+                        </div>
+                    </a>
+                    <a href="certificates/AI Workflow_ Feature Engineering and Bias Detection By IBM.pdf"
+                        target="_blank" class="certificate-card">
+                        <div class="cert-icon ibm"><i class="fas fa-balance-scale"></i></div>
+                        <div class="cert-content">
+                            <h3>Feature Eng. & Bias Detection</h3>
+                            <span class="cert-issuer">IBM</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Category: Generative AI & Prompting -->
+            <div class="cert-category">
+                <h3 class="category-title"><i class="fas fa-magic"></i> Generative AI & Prompting</h3>
+                <div class="certificates-grid">
+                    <a href="certificates/Prompt Engineering By Google.pdf" target="_blank" class="certificate-card">
+                        <div class="cert-icon google"><i class="fas fa-terminal"></i></div>
+                        <div class="cert-content">
+                            <h3>Prompt Engineering</h3>
+                            <span class="cert-issuer">Google</span>
+                        </div>
+                    </a>
+                    <a href="certificates/GooglePromptingEssentials_Badge.pdf" target="_blank" class="certificate-card">
+                        <div class="cert-icon google"><i class="fas fa-award"></i></div>
+                        <div class="cert-content">
+                            <h3>Google Prompting Essentials</h3>
+                            <span class="cert-issuer">Google</span>
+                        </div>
+                    </a>
+                    <a href="certificates/Design Prompts for Everyday Work Tasks.pdf" target="_blank"
+                        class="certificate-card">
+                        <div class="cert-icon google"><i class="fas fa-pen-nib"></i></div>
+                        <div class="cert-content">
+                            <h3>Design Prompts for Operations</h3>
+                            <span class="cert-issuer">Google</span>
+                        </div>
+                    </a>
+                    <a href="certificates/Use AI as a Creative or Expert Partner.pdf" target="_blank"
+                        class="certificate-card">
+                        <div class="cert-icon google"><i class="fas fa-lightbulb"></i></div>
+                        <div class="cert-content">
+                            <h3>AI as Creative Partner</h3>
+                            <span class="cert-issuer">Google</span>
+                        </div>
+                    </a>
+                    <a href="certificates/Speed Up Data Analysis and Presentation Building.pdf" target="_blank"
+                        class="certificate-card">
+                        <div class="cert-icon google"><i class="fas fa-tachometer-alt"></i></div>
+                        <div class="cert-content">
+                            <h3>Speed Up Data Analysis</h3>
+                            <span class="cert-issuer">Google</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Category: Cybersecurity -->
+            <div class="cert-category">
+                <h3 class="category-title"><i class="fas fa-shield-alt"></i> Cybersecurity</h3>
+                <div class="certificates-grid">
+                    <a href="certificates/Introduction To Cybersecurity By IBM.pdf" target="_blank"
+                        class="certificate-card">
+                        <div class="cert-icon ibm"><i class="fas fa-lock"></i></div>
+                        <div class="cert-content">
+                            <h3>Into to Cybersecurity</h3>
+                            <span class="cert-issuer">IBM</span>
+                        </div>
+                    </a>
+                    <a href="certificates/Introduction to Cybersecurity Essentials by IBM.pdf" target="_blank"
+                        class="certificate-card">
+                        <div class="cert-icon ibm"><i class="fas fa-user-shield"></i></div>
+                        <div class="cert-content">
+                            <h3>Cybersecurity Essentials</h3>
+                            <span class="cert-issuer">IBM</span>
+                        </div>
+                    </a>
+                    <a href="certificates/Introduction to Cybersecurity Tools & Cyberattacks.pdf" target="_blank"
+                        class="certificate-card">
+                        <div class="cert-icon ibm"><i class="fas fa-bug"></i></div>
+                        <div class="cert-content">
+                            <h3>Tools & Cyberattacks</h3>
+                            <span class="cert-issuer">IBM</span>
+                        </div>
+                    </a>
+                    <a href="certificates/Cyber Security Fundamentals By University Of London.pdf" target="_blank"
+                        class="certificate-card">
+                        <div class="cert-icon university"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="cert-content">
+                            <h3>Cyber Security Fundamentals</h3>
+                            <span class="cert-issuer">U. of London</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Category: Cloud & IT -->
+            <div class="cert-category">
+                <h3 class="category-title"><i class="fas fa-cloud"></i> Cloud & IT</h3>
+                <div class="certificates-grid">
+                    <a href="certificates/Prepare for AZ-204 Developing Solutions for by Microsoft.pdf" target="_blank"
+                        class="certificate-card">
+                        <div class="cert-icon microsoft"><i class="fab fa-microsoft"></i></div>
+                        <div class="cert-content">
+                            <h3>Developing Solutions (AZ-204)</h3>
+                            <span class="cert-issuer">Microsoft</span>
+                        </div>
+                    </a>
+                    <a href="certificates/Introduction to Information Technology and AWS_Cloud.pdf" target="_blank"
+                        class="certificate-card">
+                        <div class="cert-icon aws"><i class="fab fa-aws"></i></div>
+                        <div class="cert-content">
+                            <h3>IT & AWS Cloud</h3>
+                            <span class="cert-issuer">AWS</span>
+                        </div>
+                    </a>
+                    <a href="certificates/Introduction to Information Technology and AWS.pdf" target="_blank"
+                        class="certificate-card">
+                        <div class="cert-icon aws"><i class="fas fa-server"></i></div>
+                        <div class="cert-content">
+                            <h3>Intro to IT & AWS</h3>
+                            <span class="cert-issuer">AWS</span>
+                        </div>
+                    </a>
+                    <a href="certificates/Technical Support Fundamentals By Google.pdf" target="_blank"
+                        class="certificate-card">
+                        <div class="cert-icon google"><i class="fas fa-headset"></i></div>
+                        <div class="cert-content">
+                            <h3>Tech Support Fundamentals</h3>
+                            <span class="cert-issuer">Google</span>
+                        </div>
+                    </a>
+                    <a href="certificates/Getting Started with Git and GitHub by IBM.pdf" target="_blank"
+                        class="certificate-card">
+                        <div class="cert-icon ibm"><i class="fab fa-github"></i></div>
+                        <div class="cert-content">
+                            <h3>Git & GitHub</h3>
+                            <span class="cert-issuer">IBM</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Category: Programming & Development -->
+            <div class="cert-category">
+                <h3 class="category-title"><i class="fas fa-code"></i> Programming & Dev</h3>
+                <div class="certificates-grid">
+                    <a href="certificates/Programming in Python By META.pdf" target="_blank" class="certificate-card">
+                        <div class="cert-icon meta"><i class="fab fa-python"></i></div>
+                        <div class="cert-content">
+                            <h3>Programming in Python</h3>
+                            <span class="cert-issuer">Meta</span>
+                        </div>
+                    </a>
+                    <a href="certificates/Programming with JavaScript By META.pdf" target="_blank"
+                        class="certificate-card">
+                        <div class="cert-icon meta"><i class="fab fa-js"></i></div>
+                        <div class="cert-content">
+                            <h3>Programming in JavaScript</h3>
+                            <span class="cert-issuer">Meta</span>
+                        </div>
+                    </a>
+                    <a href="certificates/Python for Data Science, AI & Development By IBM.pdf" target="_blank"
+                        class="certificate-card">
+                        <div class="cert-icon ibm"><i class="fas fa-database"></i></div>
+                        <div class="cert-content">
+                            <h3>Python for Data Science</h3>
+                            <span class="cert-issuer">IBM</span>
+                        </div>
+                    </a>
+                    <a href="certificates/Introduction to Android Mobile Application By META.pdf" target="_blank"
+                        class="certificate-card">
+                        <div class="cert-icon meta"><i class="fab fa-android"></i></div>
+                        <div class="cert-content">
+                            <h3>Android Mobile App Dev</h3>
+                            <span class="cert-issuer">Meta</span>
+                        </div>
+                    </a>
+                    <a href="certificates/Introduction to Data Analytics By META.pdf" target="_blank"
+                        class="certificate-card">
+                        <div class="cert-icon meta"><i class="fas fa-chart-bar"></i></div>
+                        <div class="cert-content">
+                            <h3>Intro to Data Analytics</h3>
+                            <span class="cert-issuer">Meta</span>
+                        </div>
+                    </a>
+                    <a href="certificates/Crash Course On Python By Google.pdf" target="_blank"
+                        class="certificate-card">
+                        <div class="cert-icon google"><i class="fab fa-python"></i></div>
+                        <div class="cert-content">
+                            <h3>Crash Course On Python</h3>
+                            <span class="cert-issuer">Google</span>
+                        </div>
+                    </a>
+                    <a href="certificates/Programming for Everybody by University of Michigan.pdf" target="_blank"
+                        class="certificate-card">
+                        <div class="cert-icon university"><i class="fas fa-laptop-code"></i></div>
+                        <div class="cert-content">
+                            <h3>Programming for Everybody</h3>
+                            <span class="cert-issuer">U. of Michigan</span>
+                        </div>
+                    </a>
+                    <a href="certificates/Programming Fundamental In C By Duke University.pdf" target="_blank"
+                        class="certificate-card">
+                        <div class="cert-icon university"><i class="fas fa-c"></i></div>
+                        <div class="cert-content">
+                            <h3>Fundamentals in C</h3>
+                            <span class="cert-issuer">Duke Univ.</span>
+                        </div>
+                    </a>
+                    <a href="certificates/English Composition I By Duke University.pdf" target="_blank"
+                        class="certificate-card">
+                        <div class="cert-icon university"><i class="fas fa-pen-nib"></i></div>
+                        <div class="cert-content">
+                            <h3>English Composition I</h3>
+                            <span class="cert-issuer">Duke Univ.</span>
+                        </div>
+                    </a>
+
+                    <!-- New Certificates -->
+                    <a href="certificates/Introduction to Information Technology and AWS.pdf" target="_blank"
+                        class="certificate-card">
+                        <div class="cert-icon aws"><i class="fab fa-aws"></i></div>
+                        <div class="cert-content">
+                            <h3>Intro to IT & AWS</h3>
+                            <span class="cert-issuer">Coursera</span>
+                        </div>
+                    </a>
+
+                    <a href="certificates/Prompt Engineering By Google.pdf" target="_blank" class="certificate-card">
+                        <div class="cert-icon google"><i class="fas fa-robot"></i></div>
+                        <div class="cert-content">
+                            <h3>Prompt Engineering</h3>
+                            <span class="cert-issuer">Google</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Category: Data Analytics & Automation -->
+            <div class="cert-category">
+                <h3 class="category-title"><i class="fas fa-chart-line"></i> Data Analytics & Automation</h3>
+                <div class="certificates-grid">
+                    <a href="certificates/Data Analytics Process Automation Virtual Internship By AICTE.pdf"
+                        target="_blank" class="certificate-card">
+                        <div class="cert-icon university"><i class="fas fa-robot"></i></div>
+                        <div class="cert-content">
+                            <h3>Analytics & Automation</h3>
+                            <span class="cert-issuer">AICTE</span>
+                        </div>
+                    </a>
+                    <a href="certificates/Data Analytics & Business Intelligence Lab_ Explore, Analyze & Build Real-World Solutions By IBM Skill Build.pdf"
+                        target="_blank" class="certificate-card">
+                        <div class="cert-icon ibm"><i class="fas fa-chart-bar"></i></div>
+                        <div class="cert-content">
+                            <h3>Data Analytics Lab</h3>
+                            <span class="cert-issuer">IBM Skill Build</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Things I've Built</h2>
+                <p class="section-description">Here are some projects I've worked on. Each one taught me something
+                    different!</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project Card 1 - Portfolio Website -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/project-portfolio-real.png" alt="Portfolio Website">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">My Portfolio Website</h3>
+                        <p class="project-description">
+                            You're looking at it! Built this from scratch to showcase my work. Had fun with the
+                            animations.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-small btn-outline">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="btn btn-small btn-primary">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 - E-commerce Platform -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/project-ecommerce-new.png" alt="E-commerce Platform">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">ShopEasy - E-commerce</h3>
+                        <p class="project-description">
+                            Built a full shopping site with cart, filters, and checkout. My first big full-stack
+                            project!
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-small btn-outline">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="btn btn-small btn-primary">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 - Weather App -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/project-weather-new.png" alt="Weather Dashboard">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Weather Buddy</h3>
+                        <p class="project-description">
+                            Check weather anywhere! Uses real API data. This is when I learned how APIs actually work.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-small btn-outline">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="btn btn-small btn-primary">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Project Card 5 - Task Manager -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/project-todo.png" alt="Task Management App">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">TaskFlow</h3>
+                        <p class="project-description">
+                            Simple but effective task manager. Drag, drop, organize. Uses local storage so your tasks
+                            persist!
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">LocalStorage</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-small btn-outline">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="btn btn-small btn-primary">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How I Can Help</h2>
+                <p class="section-description">Looking for someone to build your idea? Here's what I do best</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service Card 1 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="service-title">Web Development</h3>
+                    <p class="service-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                        labore.
+                    </p>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="service-title">App Development</h3>
+                    <p class="service-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                        labore.
+                    </p>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 class="service-title">UI/UX Design</h3>
+                    <p class="service-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                        labore.
+                    </p>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="service-title">SEO Optimization</h3>
+                    <p class="service-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                        labore.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Talk!</h2>
+                <p class="section-description">Have a project idea or just want to say hi? Drop me a message!</p>
+            </div>
+
+            <div class="contact-content">
+                <!-- Left: Contact Information -->
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>soumyachk1@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+91 9332880661</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Address</h4>
+                            <p>Kolkata, India</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Contact Form -->
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder="Your Message"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Soumya Chakraborty. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>

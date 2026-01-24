@@ -599,6 +599,12 @@ body {
     margin-top: var(--spacing-md);
 }
 
+.project-image img.contain-image {
+    object-fit: contain;
+    background-color: #f5f5f5;
+    /* Light grey background for padding */
+}
+
 /* Gradient backgrounds for icon-based project cards */
 .project-image.gradient-bg {
     display: flex;

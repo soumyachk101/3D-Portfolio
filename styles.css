@@ -1075,6 +1075,10 @@ body {
     color: #FF9900;
 }
 
+.cert-icon.hackerrank i {
+    color: #2EC866;
+}
+
 .cert-content {
     flex: 1;
     display: flex;

@@ -668,6 +668,10 @@ body {
     box-shadow: var(--shadow-sm);
     transition: var(--transition-normal);
     cursor: pointer;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .service-card:hover {

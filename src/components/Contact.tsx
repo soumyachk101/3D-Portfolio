@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, Send, Loader2, Linkedin, Github, Twitter } from 'lucide-react';
+import { Mail, Phone, Send, Loader2, Linkedin, Github, Instagram } from 'lucide-react';
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -157,7 +157,7 @@ const Contact = () => {
                                     </div>
                                     <div>
                                         <p className="text-xs text-gray-500 uppercase tracking-wide">LinkedIn</p>
-                                        <a href="#" className="text-white font-medium hover:text-purple-400 transition-colors">View Profile</a>
+                                        <a href="https://www.linkedin.com/in/soumya-chakraborty-102b24399" target="_blank" rel="noreferrer" className="text-white font-medium hover:text-purple-400 transition-colors">View Profile</a>
                                     </div>
                                 </div>
                             </div>
@@ -175,14 +175,14 @@ const Contact = () => {
                         <div className="glass p-6 rounded-2xl border border-white/5 bg-slate-900/40 flex items-center justify-between">
                             <span className="text-gray-400 text-sm">Connect with me</span>
                             <div className="flex space-x-3">
-                                <a href="#" className="p-2 bg-purple-500/10 rounded-full text-purple-400 hover:bg-purple-500 hover:text-white transition-all">
+                                <a href="https://www.linkedin.com/in/soumya-chakraborty-102b24399" target="_blank" rel="noreferrer" className="p-2 bg-purple-500/10 rounded-full text-purple-400 hover:bg-purple-500 hover:text-white transition-all">
                                     <Linkedin size={18} />
                                 </a>
-                                <a href="#" className="p-2 bg-purple-500/10 rounded-full text-purple-400 hover:bg-purple-500 hover:text-white transition-all">
+                                <a href="https://github.com/soumyachk101" target="_blank" rel="noreferrer" className="p-2 bg-purple-500/10 rounded-full text-purple-400 hover:bg-purple-500 hover:text-white transition-all">
                                     <Github size={18} />
                                 </a>
-                                <a href="#" className="p-2 bg-purple-500/10 rounded-full text-purple-400 hover:bg-purple-500 hover:text-white transition-all">
-                                    <Twitter size={18} />
+                                <a href="https://www.instagram.com/soumya_chk" target="_blank" rel="noreferrer" className="p-2 bg-purple-500/10 rounded-full text-purple-400 hover:bg-purple-500 hover:text-white transition-all">
+                                    <Instagram size={18} />
                                 </a>
                             </div>
                         </div>

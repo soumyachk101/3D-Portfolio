@@ -987,6 +987,23 @@ body {
     letter-spacing: 0.5px;
     position: relative;
     padding-left: 1rem;
+    cursor: pointer;
+    user-select: none;
+    transition: color 0.3s ease;
+}
+
+.category-title:hover {
+    color: var(--primary-color);
+}
+
+.toggle-icon {
+    font-size: 1rem;
+    margin-left: auto;
+    transition: transform 0.3s ease;
+}
+
+.category-title.active .toggle-icon {
+    transform: rotate(180deg);
 }
 
 .category-title::before {
@@ -1002,9 +1019,26 @@ body {
 }
 
 .certificates-grid {
-    display: grid;
+    display: none;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 1rem;
+    animation: fadeIn 0.4s ease;
+}
+
+.certificates-grid.active {
+    display: grid;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .certificate-card {
@@ -1507,4 +1541,102 @@ body {
 .timeline-cert-link:hover {
     background-color: rgba(76, 201, 240, 0.2);
     transform: translateY(-2px);
+}
+
+/* ========================================
+   13. Category Cards (New)
+   ======================================== */
+
+.cert-categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.category-card {
+    background: var(--bg-white);
+    border-radius: 16px;
+    padding: 2rem;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    border-color: var(--primary-color);
+}
+
+/* Subtle gradient background on hover */
+.category-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at top right, rgba(0, 173, 181, 0.05), transparent 40%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.category-card:hover::before {
+    opacity: 1;
+}
+
+.category-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+    width: 70px;
+    height: 70px;
+    background: rgba(0, 173, 181, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.category-card:hover .category-icon {
+    transform: scale(1.1) rotate(5deg);
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.category-card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.category-card p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+}
+
+.explore-btn {
+    margin-top: auto;
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: gap 0.3s ease;
+}
+
+.category-card:hover .explore-btn {
+    gap: 0.8rem;
 }

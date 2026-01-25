@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Phone, Send, Loader2, Linkedin, Github, Twitter } from 'lucide-react';
 

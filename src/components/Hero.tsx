@@ -1,4 +1,4 @@
-import { useRef, useMemo } from 'react';
+import { useRef, useState } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { PerspectiveCamera } from '@react-three/drei';
 import { motion } from 'framer-motion';
@@ -6,7 +6,7 @@ import { ArrowDown } from 'lucide-react';
 import * as THREE from 'three';
 
 const ParticleNetwork = ({ count = 100 }) => {
-    const points = useMemo(() => {
+    const [points] = useState(() => {
         const p = new Array(count).fill(0).map(() => ({
             position: new THREE.Vector3(
                 (Math.random() - 0.5) * 10,
@@ -20,7 +20,7 @@ const ParticleNetwork = ({ count = 100 }) => {
             )
         }));
         return p;
-    }, [count]);
+    });
 
     const linesGeometryRef = useRef<THREE.BufferGeometry>(null);
     const pointsRef = useRef<THREE.Points>(null);

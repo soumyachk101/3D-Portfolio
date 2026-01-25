@@ -1,0 +1,81 @@
+
+> portfolio-3d@0.0.0 lint
+> eslint .
+
+
+D:\3d Portfolio\src\components\Hero.tsx
+  12:18  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\3d Portfolio\src\components\Hero.tsx:12:18
+  10 |         const p = new Array(count).fill(0).map(() => ({
+  11 |             position: new THREE.Vector3(
+> 12 |                 (Math.random() - 0.5) * 10,
+     |                  ^^^^^^^^^^^^^ Cannot call impure function
+  13 |                 (Math.random() - 0.5) * 10,
+  14 |                 (Math.random() - 0.5) * 10
+  15 |             ),  react-hooks/purity
+  13:18  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\3d Portfolio\src\components\Hero.tsx:13:18
+  11 |             position: new THREE.Vector3(
+  12 |                 (Math.random() - 0.5) * 10,
+> 13 |                 (Math.random() - 0.5) * 10,
+     |                  ^^^^^^^^^^^^^ Cannot call impure function
+  14 |                 (Math.random() - 0.5) * 10
+  15 |             ),
+  16 |             velocity: new THREE.Vector3(                 react-hooks/purity
+  14:18  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\3d Portfolio\src\components\Hero.tsx:14:18
+  12 |                 (Math.random() - 0.5) * 10,
+  13 |                 (Math.random() - 0.5) * 10,
+> 14 |                 (Math.random() - 0.5) * 10
+     |                  ^^^^^^^^^^^^^ Cannot call impure function
+  15 |             ),
+  16 |             velocity: new THREE.Vector3(
+  17 |                 (Math.random() - 0.5) * 0.01,            react-hooks/purity
+  17:18  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\3d Portfolio\src\components\Hero.tsx:17:18
+  15 |             ),
+  16 |             velocity: new THREE.Vector3(
+> 17 |                 (Math.random() - 0.5) * 0.01,
+     |                  ^^^^^^^^^^^^^ Cannot call impure function
+  18 |                 (Math.random() - 0.5) * 0.01,
+  19 |                 (Math.random() - 0.5) * 0.01
+  20 |             )                                      react-hooks/purity
+  18:18  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\3d Portfolio\src\components\Hero.tsx:18:18
+  16 |             velocity: new THREE.Vector3(
+  17 |                 (Math.random() - 0.5) * 0.01,
+> 18 |                 (Math.random() - 0.5) * 0.01,
+     |                  ^^^^^^^^^^^^^ Cannot call impure function
+  19 |                 (Math.random() - 0.5) * 0.01
+  20 |             )
+  21 |         }));                                        react-hooks/purity
+  19:18  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\3d Portfolio\src\components\Hero.tsx:19:18
+  17 |                 (Math.random() - 0.5) * 0.01,
+  18 |                 (Math.random() - 0.5) * 0.01,
+> 19 |                 (Math.random() - 0.5) * 0.01
+     |                  ^^^^^^^^^^^^^ Cannot call impure function
+  20 |             )
+  21 |         }));
+  22 |         return p;                                                               react-hooks/purity
+
+Γ£û 6 problems (6 errors, 0 warnings)
+

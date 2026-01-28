@@ -1,0 +1,21 @@
+
+> portfolio-3d@0.0.0 build
+> tsc -b && vite build
+
+[36mvite v7.3.1 [32mbuilding client environment for production...[36m[39m
+transforming...
+[32mΓ£ô[39m 5 modules transformed.
+Γ£ù Build failed in 320ms
+error during build:
+[vite:css] [postcss] postcss-import: D:\3d Portfolio\node_modules\tailwindcss\lib\index.js:1:1: Unknown word "use strict"
+file: D:\3d Portfolio\node_modules\tailwindcss\lib\index.js:1:0 (D:/3d Portfolio/src/index.css)
+    at Input.error (D:\3d Portfolio\node_modules\postcss\lib\input.js:135:16)
+    at Parser.unknownWord (D:\3d Portfolio\node_modules\postcss\lib\parser.js:595:22)
+    at Parser.other (D:\3d Portfolio\node_modules\postcss\lib\parser.js:437:12)
+    at Parser.parse (D:\3d Portfolio\node_modules\postcss\lib\parser.js:472:16)
+    at parse (D:\3d Portfolio\node_modules\postcss\lib\parse.js:11:12)
+    at get root (D:\3d Portfolio\node_modules\postcss\lib\no-work-result.js:43:14)
+    at Result.get [as root] (D:\3d Portfolio\node_modules\postcss\lib\no-work-result.js:77:21)
+    at loadImportContent (file:///D:/3d%20Portfolio/node_modules/vite/dist/node/chunks/postcss-import.js:408:33)
+    at async Promise.all (index 0)
+    at async resolveImportId (file:///D:/3d%20Portfolio/node_modules/vite/dist/node/chunks/postcss-import.js:387:20)

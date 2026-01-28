@@ -1,0 +1,32 @@
+
+> portfolio-3d@0.0.0 build
+> tsc -b && vite build
+
+[36mvite v7.3.1 [32mbuilding client environment for production...[36m[39m
+transforming...
+Error: Cannot apply unknown utility class `bg-slate-950`. Are you using CSS modules or similar and missing `@reference`? https://tailwindcss.com/docs/functions-and-directives#reference-directive
+    at onInvalidCandidate (D:\3d Portfolio\node_modules\@tailwindcss\node\node_modules\tailwindcss\dist\lib.js:21:1314)
+    at Te (D:\3d Portfolio\node_modules\@tailwindcss\node\node_modules\tailwindcss\dist\lib.js:16:36652)
+    at D:\3d Portfolio\node_modules\@tailwindcss\node\node_modules\tailwindcss\dist\lib.js:21:355
+    at Rr (D:\3d Portfolio\node_modules\@tailwindcss\node\node_modules\tailwindcss\dist\lib.js:3:1718)
+    at _ (D:\3d Portfolio\node_modules\@tailwindcss\node\node_modules\tailwindcss\dist\lib.js:3:1377)
+    at $e (D:\3d Portfolio\node_modules\@tailwindcss\node\node_modules\tailwindcss\dist\lib.js:21:172)
+    at un (D:\3d Portfolio\node_modules\@tailwindcss\node\node_modules\tailwindcss\dist\lib.js:38:294)
+    at async cn (D:\3d Portfolio\node_modules\@tailwindcss\node\node_modules\tailwindcss\dist\lib.js:38:631)
+    at async Xr (D:\3d Portfolio\node_modules\@tailwindcss\node\dist\index.js:10:3417)
+    at async I (D:\3d Portfolio\node_modules\@tailwindcss\postcss\dist\index.js:10:3977)
+[32mΓ£ô[39m 4 modules transformed.
+Γ£ù Build failed in 332ms
+error during build:
+[vite:css] [postcss] tailwindcss: D:/3d Portfolio/src/index.css:1:1: Cannot apply unknown utility class `bg-slate-950`. Are you using CSS modules or similar and missing `@reference`? https://tailwindcss.com/docs/functions-and-directives#reference-directive
+file: D:/3d Portfolio/src/index.css:1:0
+    at Input.error (D:\3d Portfolio\node_modules\postcss\lib\input.js:135:16)
+    at Root.error (D:\3d Portfolio\node_modules\postcss\lib\node.js:146:32)
+    at Object.Once (D:\3d Portfolio\node_modules\@tailwindcss\postcss\dist\index.js:10:6911)
+    at async LazyResult.runAsync (D:\3d Portfolio\node_modules\postcss\lib\lazy-result.js:293:11)
+    at async runPostCSS (file:///D:/3d%20Portfolio/node_modules/vite/dist/node/chunks/config.js:30145:19)
+    at async compilePostCSS (file:///D:/3d%20Portfolio/node_modules/vite/dist/node/chunks/config.js:30129:6)
+    at async compileCSS (file:///D:/3d%20Portfolio/node_modules/vite/dist/node/chunks/config.js:30059:26)
+    at async Object.handler (file:///D:/3d%20Portfolio/node_modules/vite/dist/node/chunks/config.js:29592:54)
+    at async transform (file:///D:/3d%20Portfolio/node_modules/rollup/dist/es/shared/node-entry.js:21239:16)
+    at async ModuleLoader.addModuleSource (file:///D:/3d%20Portfolio/node_modules/rollup/dist/es/shared/node-entry.js:21453:36)

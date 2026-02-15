@@ -8,6 +8,38 @@
   <title>Soumya Chakraborty | 3D Portfolio</title>
   <meta name="description" content="Immersive 3D Portfolio of Soumya Chakraborty, a Web Developer & Designer." />
 </head>
+<script>
+  window.onerror = function (message, source, lineno, colno, error) {
+    var errorContainer = document.createElement('div');
+    errorContainer.style.position = 'fixed';
+    errorContainer.style.top = '0';
+    errorContainer.style.left = '0';
+    errorContainer.style.width = '100%';
+    errorContainer.style.backgroundColor = '#990000';
+    errorContainer.style.color = 'white';
+    errorContainer.style.padding = '20px';
+    errorContainer.style.zIndex = '999999';
+    errorContainer.style.fontFamily = 'monospace';
+    errorContainer.style.whiteSpace = 'pre-wrap';
+    errorContainer.innerText = 'Global Error:\n' + message + '\nAt: ' + source + ':' + lineno + ':' + colno + '\nStack: ' + (error ? error.stack : 'N/A');
+    document.body.appendChild(errorContainer);
+  };
+  window.addEventListener('unhandledrejection', function (event) {
+    var errorContainer = document.createElement('div');
+    errorContainer.style.position = 'fixed';
+    errorContainer.style.top = '50%';
+    errorContainer.style.left = '0';
+    errorContainer.style.width = '100%';
+    errorContainer.style.backgroundColor = '#990000';
+    errorContainer.style.color = 'white';
+    errorContainer.style.padding = '20px';
+    errorContainer.style.zIndex = '999999';
+    errorContainer.style.fontFamily = 'monospace';
+    errorContainer.style.whiteSpace = 'pre-wrap';
+    errorContainer.innerText = 'Unhandled Rejection:\n' + event.reason;
+    document.body.appendChild(errorContainer);
+  });
+</script>
 
 <body>
   <div id="root"></div>

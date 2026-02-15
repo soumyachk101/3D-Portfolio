@@ -34,6 +34,22 @@ const Projects = () => {
             image: "/images/project-todo.png",
             github: "#",
             live: "#"
+        },
+        {
+            title: "Country Finder",
+            desc: "A tool to search for countries and view their details.",
+            tags: ["React", "API", "CSS"],
+            image: "/images/project-country.png",
+            github: "#",
+            live: "#"
+        },
+        {
+            title: "StockVolatility",
+            desc: "Analyze stock market volatility with real-time data.",
+            tags: ["React", "Finance", "API"],
+            image: "/images/project-stock.png",
+            github: "#",
+            live: "#"
         }
     ];
 

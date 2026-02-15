@@ -4,6 +4,22 @@ import { ExternalLink, Github } from 'lucide-react';
 const Projects = () => {
     const projects = [
         {
+            title: "HealthTrack+",
+            desc: "Comprehensive health monitoring and appointment booking platform.",
+            tags: ["React", "Express", "MongoDB", "Node.js"],
+            image: "/images/project-healthtrack.png",
+            github: "#",
+            live: "#"
+        },
+        {
+            title: "Stream.Tv",
+            desc: "A modern video streaming platform with real-time features.",
+            tags: ["Next.js", "Socket.io", "Tailwind"],
+            image: "/images/project-streamtv.png",
+            github: "#",
+            live: "#"
+        },
+        {
             title: "Portfolio Website",
             desc: "My personal 3D portfolio built with React, Three.js, and Framer Motion.",
             tags: ["React", "Three.js", "Tailwind"],

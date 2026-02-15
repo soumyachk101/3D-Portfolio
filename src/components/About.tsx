@@ -50,7 +50,7 @@ const About = () => {
                         <div className="glass p-8 rounded-2xl border border-white/5 bg-slate-900/40 hover:bg-slate-900/60 transition-colors">
                             <h3 className="text-xl font-bold text-purple-400 mb-4">Creative & Detail-Oriented</h3>
                             <p className="text-gray-300 leading-relaxed">
-                                I'm a passionate 2nd Year B.Tech CSE Student at NSHM Knowledge Campus. I love exploring the intersection of design and technology, creating user-centric web applications that not only look great but function seamlessly. My journey is driven by curiosity and a constant desire to learn new technologies.
+                                I'm a passionate 3rd Year B.Tech CSE Student. I love exploring the intersection of design and technology, creating user-centric web applications that not only look great but function seamlessly. My journey is driven by curiosity and a constant desire to learn new technologies.
                             </p>
                         </div>
 

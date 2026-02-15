@@ -143,7 +143,7 @@ const Hero = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.4 }}
                     >
-                        A <span className="text-indigo-300 font-semibold">2nd Year B.Tech CSE Student</span> creating intuitive digital experiences.
+                        A <span className="text-indigo-300 font-semibold">3rd Year B.Tech CSE Student</span> creating intuitive digital experiences.
                     </motion.p>
 
                     <motion.div

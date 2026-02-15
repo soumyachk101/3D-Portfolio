@@ -54,8 +54,8 @@ const ParticleNetwork = ({ count = 100 }) => {
         if (linesGeometryRef.current) {
             const positions: number[] = [];
 
-            for (let i = 0; i < count; i++) {
-                for (let j = i + 1; j < count; j++) {
+            for (let i = 0; i < points.length; i++) {
+                for (let j = i + 1; j < points.length; j++) {
                     const dist = points[i].position.distanceTo(points[j].position);
                     if (dist < 2) { // Connection threshold
                         positions.push(

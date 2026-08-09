@@ -1,3 +1,16 @@
 {
-  "framework": "nextjs"
+ "framework": "nextjs",
+ "redirects": [
+ {
+ "source": "/(.*)",
+ "has": [
+ {
+ "type": "host",
+ "value": "soumyachakraborty.site"
+ }
+ ],
+ "destination": "https://chksoumya.in/$1",
+ "permanent": true
+ }
+ ]
 }

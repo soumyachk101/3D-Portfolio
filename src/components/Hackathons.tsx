@@ -112,6 +112,21 @@ const Hackathons = () => {
             stickerEmoji: "🤖"
         },
         {
+            name: "INNOFUSION 3.0",
+            project: "DRISHTI CYBER",
+            organizer: "NiT College",
+            role: "Full Stack Dev",
+            achievement: "Innovation Finalist",
+            duration: "36 Hours",
+            partySize: "4 Players",
+            desc: "Built an AI-powered network risk intelligence platform mapping reachability attack graphs and pricing dollar blast radius.",
+            tags: ["FastAPI", "React", "NetworkX", "Graph Theory", "Python"],
+            github: "https://github.com/soumyachk101/Drishti-Innofusion",
+            live: "https://drishticyber.vercel.app/",
+            cartridgeColor: "bg-[#ffe4e6] border-[#f43f5e] text-[#881337]", // rose notes
+            stickerEmoji: "👁️"
+        },
+        {
             name: "TEKATHON 2K26",
             project: "MULTIMODAL RAG",
             organizer: "Techno College",
@@ -186,7 +201,7 @@ const Hackathons = () => {
                                 Pinned Wanted Bounties
                             </h3>
 
-                            <div className="flex flex-row overflow-x-auto gap-5 pb-4 pt-4 lg:pt-0 lg:pb-0 lg:flex-col lg:justify-center flex-1 w-full scrollbar-thin scroll-smooth snap-x snap-mandatory">
+                            <div className="flex flex-row overflow-x-auto gap-5 pb-4 pt-4 lg:pt-0 lg:pb-0 lg:flex-col lg:justify-start lg:gap-4 lg:overflow-y-auto lg:max-h-[580px] lg:pr-1 flex-1 w-full scrollbar-thin scroll-smooth snap-x snap-mandatory">
                                 {hackathons.map((hack, idx) => {
                                     const isSelected = selectedQuest === idx;
                                     const rotation = idx % 2 === 0 ? '-rotate-2' : 'rotate-2';

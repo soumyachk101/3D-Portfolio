@@ -1,31 +1,42 @@
 import { MetadataRoute } from 'next';
-import { categories, publicCertificates } from '../data/certificates';
+import { categories, certificates } from '../data/certificates';
 
 export default function sitemap(): MetadataRoute.Sitemap {
  const SITE = 'https://chksoumya.in';
- const today = new Date();
+ const now = new Date();
 
  const home: MetadataRoute.Sitemap[number] = {
  url: `${SITE}/`,
- lastModified: today,
+ lastModified: now,
  changeFrequency: 'weekly',
  priority: 1.0,
  };
 
  const categoryRoutes: MetadataRoute.Sitemap = categories.map((cat) => ({
  url: `${SITE}/certificates/${cat.id}/`,
- lastModified: today,
+ lastModified: now,
  changeFrequency: 'weekly',
  priority: 0.8,
  }));
 
- // 41 individual certificate pages for long-tail SEO
- const certRoutes: MetadataRoute.Sitemap = publicCertificates.map((cert) => ({
+ // All certificate pages for long-tail SEO (including internships)
+ const certRoutes: MetadataRoute.Sitemap = certificates.map((cert) => {
+ const certDate = new Date(`${cert.date}-01-01`);
+ return {
  url: `${SITE}/certificates/${cert.id}/`,
- lastModified: today,
+ lastModified: certDate,
  changeFrequency: 'monthly',
  priority: 0.6,
- }));
+ };
+ });
 
- return [home, ...categoryRoutes, ...certRoutes];
+ // Add the HTML sitemap page
+ const sitemapPage: MetadataRoute.Sitemap[number] = {
+ url: `${SITE}/sitemap`,
+ lastModified: now,
+ changeFrequency: 'weekly',
+ priority: 0.5,
+ };
+
+ return [home, sitemapPage, ...categoryRoutes, ...certRoutes];
 }

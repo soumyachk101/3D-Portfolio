@@ -106,6 +106,9 @@ export const metadata: Metadata = {
  manifest: '/manifest.json',
  verification: {
  google: 'google34fa8d6ffd2a7690',
+ other: {
+ 'msvalidate.01': 'BingVerificationPlaceholder',
+ },
  },
 };
 
@@ -226,16 +229,30 @@ export default function RootLayout({
  <noscript>
  <h1>Soumya Chakraborty — Full Stack Developer & Software Engineer</h1>
  <p>
- Welcome to the portfolio of Soumya Chakraborty, a CS undergraduate and
- Full Stack Developer based in Kolkata, India. Specializing in React,
- Next.js, Node.js, and Python. 46+ professional certifications from
- Google, IBM, AWS, NVIDIA, Microsoft, and Meta.
+ Soumya Chakraborty is a CS undergraduate and Full Stack Developer based
+ in Kolkata, India, with over 2 years of hands-on experience building
+ production-grade web applications. He specializes in modern front-end
+ and back-end technologies including React, Next.js, Node.js, Python,
+ TypeScript, Tailwind CSS, FastAPI, MongoDB, PostgreSQL, and cloud
+ platforms such as AWS and Docker. His portfolio showcases real-world
+ projects spanning AI and machine learning, blockchain, DevOps automation,
+ and network security — all built with an emphasis on performance,
+ accessibility, and clean architecture. Visitors can explore project
+ case studies, professional experience, and 46+ industry-recognized
+ certifications from Google, IBM, AWS, NVIDIA, Microsoft, and Meta.
  </p>
  <p>
- <Link href="/#projects">Projects</Link> ·{' '}
- <Link href="/#experience">Experience</Link> ·{' '}
- <Link href="/#certificates">Certificates</Link> ·{' '}
- <Link href="/#contact">Contact</Link>
+ <strong>Featured projects:</strong> Drishti AI (AI network security), Neeti AI (AI recruitment platform), Phygital Trace (blockchain supply chain), NexusOps (DevOps automation), and more — all built with modern web technologies.
+ </p>
+ <p>
+ <strong>Achievements:</strong> 1st Place at Code for Change 2.0 Hackathon, Blockchain Nominee at Hacktropica 2K26, RAG Finalist at Tekathon 2K26, and Innovation Finalist at Innofusion 3.0.
+ </p>
+ <p>
+ <Link href="/#projects">Projects</Link> ·
+ <Link href="/#experience">Experience</Link> ·
+ <Link href="/#certificates">Certificates</Link> ·
+ <Link href="/#contact">Contact</Link> ·
+ <Link href="https://github.com/soumyachk101">GitHub</Link>
  </p>
  </noscript>
  <ClientLayout>{children}</ClientLayout>

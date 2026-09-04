@@ -11,6 +11,17 @@
  ],
  "destination": "https://chksoumya.in/$1",
  "permanent": true
+ },
+ {
+ "source": "/(.*)",
+ "has": [
+ {
+ "type": "host",
+ "value": "www.chksoumya.in"
+ }
+ ],
+ "destination": "https://chksoumya.in/$1",
+ "permanent": true
  }
  ]
 }
